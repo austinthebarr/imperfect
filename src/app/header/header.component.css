@@ -1,0 +1,105 @@
+body{
+  color: #333;
+  font-family: "Open Sans", "sans-serif";
+  font-size: 16px;
+  font-weight: 200;
+};
+
+
+.container-fluid{
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left:auto;
+}
+
+ .row, .top-bar{
+  border-bottom: 1px dashed #cfcfcf;
+  width: 1170px;
+  font-weight:400;
+  padding: 0 1.071em 0 1.071em;
+  font-size: 14px;
+}
+
+.col-lg-2{
+  width: 16.666%
+}
+
+.login img{
+  height: 90px;
+  width: auto !important;
+  margin-bottom: 5px;
+}
+
+.user-action{
+  float:right;
+  width: auto;
+}
+
+.top-bar, .user-action, .login{
+  margin-right: -15px;
+}
+.top-bar, .user-action, ul{
+  float: right;
+}
+
+.user-action, ul, li{
+  display: inline-block;
+  list-style: none;
+  margin-left:1.071em;
+  padding:0px;
+  position: relative;
+}
+
+.header{
+  background-color: #fff;
+  padding-top: 1.071em;
+}
+.row {
+  padding-top: 10px;
+  margin-right: 65px;
+  margin-left: -35px;
+}
+
+nav{
+  float:left;
+  position: relative;
+  text-align: right;
+  width:80%;
+  overflow: visible !important;
+}
+.header, .options{
+  margin-top: 1.071em;
+  border-bottom: none;
+}
+
+.header li:first-of-type {
+  margin-left: 0;
+}
+
+.header li {
+  float: left;
+  margin: 0.5355em,1.071em,0.5255em,1.071em;
+}
+.user-action, ul, li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px;
+  position: relative;
+  margin-bottom: 10px;
+}
+nav .options{
+float:right;
+}
+
+.login{
+  display: flex;
+}
+
+.nav{
+  float: left;
+  position: relative;
+  text-align: right;
+  width: 100%;
+
+}
