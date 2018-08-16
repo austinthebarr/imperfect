@@ -88,12 +88,23 @@ nav{
   position: relative;
   margin-bottom: 10px;
 }
+
+li:hover{
+  border-bottom: solid 4px #CA0183;
+}
 .why{
   position: absolute;
   z-index: 1;
+  border: solid .5px black;
+  margin-top: 25px;
+  padding: 5px 5px;
+  background-color: #fff;
 }
 
 .why .info li{
   display: block;
   float: none !important;
+}
+.hoverItem{
+z-index: -1;
 }
