@@ -14,9 +14,13 @@ body{
 
 .row {
   border-bottom: 1px dashed #cfcfcf;
-  width: 1170px;
+  max-width: 1400px;
   padding: 0 1.071em 0 1.071em;
   font-size: 14px;
+  padding-top: 10px;
+  margin-right: -15px;
+  margin-left: -15px;
+  float: left;
 }
 
 .col-lg-2{
@@ -27,7 +31,7 @@ body{
   height: 105px;
   width: auto !important;
   margin-bottom: 8px;
-  margin-top:10px;
+  margin-top:40px;
 }
 
 .btn-danger{
@@ -35,16 +39,11 @@ body{
   padding: 0.357em 1.071em;
 }
 
-.user-action{
-  float:right;
-  width: auto;
-}
 
 .top-bar .user-action .login{
   margin-right: -15px;
 }
-
-.top-bar .user-action ul{
+.button{
   float: right;
 }
 
@@ -63,23 +62,19 @@ body{
   background-color: #fff;
   padding-top: 1.071em;
 }
-.row {
-  padding-top: 10px;
-  margin-right: 65px;
-  margin-left: -35px;
-}
 
 nav{
-  float:left;
   position: relative;
   text-align: right;
-  width:80%;
+  max-width:100%;
   overflow: visible !important;
   margin-left: 60px;
+  margin-top: 25px;
 }
 .header{
   margin-top: 1.071em;
   border-bottom: none;
+  float: right;
 }
 
 .header li {
@@ -92,21 +87,6 @@ nav{
   padding: 0px;
   position: relative;
   margin-bottom: 10px;
-}
-nav .options{
-  float:right;
-}
-
-.login{
-  display: flex;
-}
-
-.nav{
-  float: left;
-  position: relative;
-  text-align: right;
-  width: 100%;
-
 }
 .why{
   position: absolute;
