@@ -16,7 +16,14 @@
       <div class="row header">
         <nav>
           <ul class='options'>
-            <li><a href="#">WHY IMPERFECT?</a></li>
+            <li><a (mouseover) = "hover=true" href="#">WHY IMPERFECT?</a></li>
+            <div *ngIf= "hover" class ="why">
+              <ul class="info">
+                <li>why</li>
+                <li>why</li>
+                <li>why</li>
+              </ul>
+            </div>
             <li><a href="#">CUSTOMAZATION 101</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">BLOG</a></li>
