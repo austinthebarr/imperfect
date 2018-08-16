@@ -1,22 +1,20 @@
+
 body{
   color: #333;
-  font-family: "Open Sans", "sans-serif";
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  font-weight: 200;
 };
 
-
 .container-fluid{
-padding-right: 15px;
-padding-left: 15px;
-margin-right: auto;
-margin-left:auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left:auto;
 }
 
- .row, .top-bar{
+.row, .top-bar{
   border-bottom: 1px dashed #cfcfcf;
   width: 1170px;
-  font-weight:400;
   padding: 0 1.071em 0 1.071em;
   font-size: 14px;
 }
@@ -26,9 +24,17 @@ margin-left:auto;
 }
 
 .login img{
-  height: 90px;
+  height: 105px;
   width: auto !important;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  margin-top:10px;
+}
+
+.btn-danger{
+  background-color: #CA0183;
+  padding: 0.357em 1.071em;
+
+
 }
 
 .user-action{
@@ -39,16 +45,20 @@ margin-left:auto;
 .top-bar, .user-action, .login{
   margin-right: -15px;
 }
+
 .top-bar, .user-action, ul{
   float: right;
 }
 
-.user-action, ul, li{
+.user-action, ul, li, a{
   display: inline-block;
   list-style: none;
   margin-left:1.071em;
   padding:0px;
   position: relative;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 .header{
@@ -67,14 +77,11 @@ nav{
   text-align: right;
   width:80%;
   overflow: visible !important;
+  margin-left: 60px;
 }
 .header, .options{
   margin-top: 1.071em;
   border-bottom: none;
-}
-
-.header li:first-of-type {
-  margin-left: 0;
 }
 
 .header li {
@@ -89,7 +96,7 @@ nav{
   margin-bottom: 10px;
 }
 nav .options{
-float:right;
+  float:right;
 }
 
 .login{
