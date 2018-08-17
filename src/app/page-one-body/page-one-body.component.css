@@ -1,5 +1,9 @@
 .banner{
   background-image: url("/assets/images/produce.jpg");
-  padding: 20px 20px;
   position: relative;
+  text-align: center;
+  height: 614px;
+  background-position: center center !important;
+  background-size: cover !important;
+  width: 100%;
 }
