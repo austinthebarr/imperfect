@@ -17,6 +17,6 @@ import { PageOneBodyComponent } from './page-one-body/page-one-body.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeaderComponent, PageOneBodyComponent]
 })
 export class AppModule { }
