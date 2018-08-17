@@ -7,3 +7,35 @@
   background-size: cover !important;
   width: 100%;
 }
+
+.col-md-4{
+  width: 33.33333333%;
+}
+
+.banner .info{
+  position: absolute;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 5.355em 1.071em;
+  width: 25%;
+  margin-left: 15em;
+  text-align: left;
+}
+
+.banner .info h1{
+  text-transform: none;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 10px;  
+}
+
+.banner .info p{
+  max-width: 20em;
+}
+
+.banner .info .btn-primary{
+  padding: 4px 8em;
+  background-color: #CA0183;
+  border: none; 
+}
