@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><svg viewBox="2608 364 120 120" xmlns="http://www.w3.org/2000/svg"><defs><style>
+      .cls-1 {
+        fill: #01BF81;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style></defs><g data-name="Group 1" id="Group_1" transform="translate(2603 359)"><ellipse class="cls-1" cx="60" cy="59.858" data-name="Ellipse 1" id="Ellipse_1" rx="60" ry="59.858" transform="translate(5 5)"/><path class="cls-2" d="M510.367,296.777v-44.96H523.7v-13.3H510.367s-.933-9.976,3.467-14.366,13.6-3.458,13.6-3.458v-14.9s-17.8-1.729-25.867,6.651-7.467,26.072-7.467,26.072h-12v13.3h12v44.428a58.2,58.2,0,0,0,8.533,1.064A41.273,41.273,0,0,0,510.367,296.777Z" data-name="Path 1" id="Path_1" transform="translate(-439.767 -172.326)"/></g></svg>
