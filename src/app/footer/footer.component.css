@@ -1,0 +1,33 @@
+.max-width{
+  max-width: 1170px;
+}
+.row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+footer .sub-header{
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+.social{
+  float: left;
+  margin: 0;
+}
+footer .social li a{
+  width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 15px;
+    background-color: #01BF81;
+    padding-left: 6px;
+}
+
+footer ul{
+  clear: both;
+  margin: 1.071em 0 0 0;
+  padding: 0;
+}

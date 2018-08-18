@@ -6,6 +6,6 @@ import { Component} from '@angular/core';
   styleUrls: ['./page-one-body.component.css']
 })
 export class PageOneBodyComponent  {
-
-
+  HowItWorks= "assets/images/howitworks.jpg";
+  Lemon= "assets/images/lemon.jpg";
 }
