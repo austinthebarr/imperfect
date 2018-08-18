@@ -46,4 +46,16 @@ div a{
 
 .row .image img{
   max-width: stretch;
+
+}
+
+.col-md-3 .brand img{
+  height: 90px;
+  width: auto !important;
+  margin-bottom: 5px;
+  max-width: 150px;
+}
+
+.row .address{
+  margin-top: 5px;
 }
