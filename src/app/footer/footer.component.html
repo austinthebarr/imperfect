@@ -2,27 +2,67 @@
   <div class="max-width">
     <div class="row">
       <div class="col-sm-12 top-footer">
-        <div class="col-sm-3">
-          <h2 class="sub-header">FOLLOW US</h2>
-          <ul class="social">
-            <li>
-              <a href="https://www.facebook.com/imperfectproduce" target="_blank">
-                <svg-icon src="assets/images/facebook.svg" [stretch]="true" [svgStyle]="{'width.px':30,'fill':'rgb(150,50,255)','padding.px':1,'margin.px':3}">
-                </svg-icon>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Imperfectfruit" target="_blank"></a>
-            </li>
-            <li>
-              <a href="https://www.pinterest.com/imperfectfruit/" target="_blank"></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/imperfectproduce/" target="_blank"></a>
-            </li>
-          </ul>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <h2 class="sub-header">FOLLOW US</h2>
+            <ul class="social">
+              <li>
+                <a href="https://www.facebook.com/imperfectproduce" target="_blank">
+                  <svg-icon src="assets/images/facebook.svg" [stretch]="true" [svgStyle]="{'width.px':30,'fill':'rgb(150,50,255)','padding.px':1,'margin.px':3}">
+                  </svg-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Imperfectfruit" target="_blank">
+                  <svg-icon src="assets/images/twitter.svg" [stretch]="true" [svgStyle]="{'width.px':30,'fill':'rgb(150,50,255)','padding.px':1,'margin.px':3}">
+                  </svg-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/imperfectfruit/" target="_blank">
+                  <svg-icon src="assets/images/pintrest.svg" [stretch]="true" [svgStyle]="{'width.px':30,'fill':'rgb(150,50,255)','padding.px':1,'margin.px':3}">
+                  </svg-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/imperfectproduce/" target="_blank">
+                  <svg-icon src="assets/images/instagram.svg" [stretch]="true" [svgStyle]="{'width.px':30,'fill':'rgb(150,50,255)','padding.px':1,'margin.px':3}">
+                  </svg-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-6 email">
+            <h2 class="sub-header">Don’t Miss a Beet! Sign up for our newsletter.</h2>
+            <div class="form-group">
+              <form method="GET" action="https://www.imperfectproduce.com/news_signup.php">
+                <div class="input-group">
+                  <input type="hidden" name="mode" value="go">
+                  <input type="hidden" name="redirect_to" value="https://www.imperfectproduce.com/home.php">
+                  <input type="email" class="form-control usersubscribe" name="user_email" placeholder="Your email address" required="">
+                  <input type="submit" class="button btn-danger input-group-addon subscribe-button" value="Subscribe">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-3">
+              <h2 class="sub-header">BLOG</h2>
+              <div class="row">
+              <div class="col-sm-4 image">
+                <img src="{{person}}">
+              </div>
+              <div class="col-sm-8">
+                  <a href="http://blog.imperfectproduce.com/blog-1/2018/8/16/donation-spotlight-farming-hope-in-san-francisco" target="_blank">Donation Spotlight: Farming Hope in San Francisco</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-xs-12 col-sm-12">
+      <hr>
   </div>
 </footer>
