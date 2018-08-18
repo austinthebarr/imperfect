@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   hoverItem = false;
-  imperfectLogo = "assets/images/logo.png";
+  imperfectLogo= "assets/images/logo.png";
 }

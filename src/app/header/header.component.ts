@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-@Input() logo:string;
+@Input() imperfectLogo:string;
 }

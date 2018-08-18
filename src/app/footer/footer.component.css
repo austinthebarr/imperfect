@@ -45,5 +45,5 @@ div a{
 }
 
 .row .image img{
-  max-width: -webkit-fill-available;
+  max-width: stretch;
 }

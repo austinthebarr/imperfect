@@ -22,6 +22,6 @@ import { FooterComponent } from './footer/footer.component';
     AngularSvgIconModule
   ],
   providers: [],
-  bootstrap: [AppComponent, HeaderComponent, PageOneBodyComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
