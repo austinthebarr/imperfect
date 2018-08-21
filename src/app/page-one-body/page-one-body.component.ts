@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-page-one-body',
@@ -8,4 +8,5 @@ import { Component} from '@angular/core';
 export class PageOneBodyComponent  {
   HowItWorks= "assets/images/howitworks.jpg";
   Lemon= "assets/images/lemon.jpg";
+  @Input() logo:string;
 }
