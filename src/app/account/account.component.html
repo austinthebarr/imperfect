@@ -1,17 +1,21 @@
 
 <div class="row">
-    <ul class="nav flex-column col-md-4">
+    <ul class="nav flex-column col-md-3">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Address</a>
+          <a class="nav-link active" href="#"><svg-icon src="./assets/images/home.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+          </svg-icon>Address</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Delivery</a>
+          <a class="nav-link" href="#"><svg-icon src="./assets/images/clock.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+          </svg-icon>Delivery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Delivery Date</a>
+          <a class="nav-link" href="#"><svg-icon src="./assets/images/box.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+          </svg-icon>Manage Subscription</a>
         </li>
       </ul>
-<form class= "col-md-6" *ngFor="let user of users | async">
+      <div class="col-md-1"></div>
+<form class= "col-md-5" *ngFor="let user of users | async">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="email">Name</label>
@@ -35,7 +39,7 @@
         <label for="inputState">State</label>
         <select id="inputState" class="form-control">
           <option selected>{{user.state}}</option>
-          <option>...</option>
+          <option *ngFor="let state of states">{{this.state}}</option>
         </select>
       </div>
       <div class="form-group col-md-2">
@@ -43,6 +47,10 @@
         <input type="text" class="form-control" id="inputZip" placeholder="{{user.zip}}">
       </div>
     </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Delivery Notes</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="{{user.deliveryNotes}}"></textarea>
+      </div>
   
     <button type="submit" class="btn btn-primary">Update</button>
   </form>

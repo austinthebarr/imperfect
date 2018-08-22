@@ -1,8 +1,31 @@
+
+
 .row{
   background-color: #F1EEEA;
   height: 600px;
+  justify-content: center;
 }
 
 form{
   background-color: #fff;
+  margin-top: 1em;
+}
+
+.nav-item .nav-link{
+  text-decoration: none;
+  color:black;
+  text-align: center;
+}
+.nav-item:hover {
+  background-color: #01BF81;
+  color: #fff !important;
+}
+
+.nav{
+  background-color: #fff;
+}
+
+.btn-primary{
+  background-color: #01BF81;
+  border: none;
 }
