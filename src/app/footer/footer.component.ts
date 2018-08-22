@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+
+
 
 @Component({
   selector: 'app-footer',

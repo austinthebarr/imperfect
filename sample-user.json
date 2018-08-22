@@ -1,0 +1,13 @@
+{ "userInfo": [{
+  "name": "Austin Barr",
+  "street": "999 Hiawatha",
+  "apt": "110",
+  "city": "Seattle",
+  "state":"WA",
+  "zip": "98122",
+  "phone":"2547183868",
+  "delivery":"thu 3:00pm - 10:00pm",
+  "deliveryNotes":"leave by mailbox",
+  "box":"veggies"
+  }]
+}

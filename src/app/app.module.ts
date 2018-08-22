@@ -11,6 +11,17 @@ import { PageOneBodyComponent } from './page-one-body/page-one-body.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { AccountComponent } from './account/account.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 
 @NgModule({
@@ -20,7 +31,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     PageOneBodyComponent,
     FooterComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +40,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     AngularSvgIconModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
