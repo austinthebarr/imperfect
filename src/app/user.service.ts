@@ -12,4 +12,15 @@ export class UserService {
   getUserInfo(){
   return this.users;
   }
+
+  updateUserInfo(user){
+    user.update({apt: user.apt,
+                 city: user.city,
+                 deliveryNotes: user.deliveryNotes,
+                 name: user.name,
+                 phone: user.phone,
+                 state: user.state,
+                 street: user.street,
+                 zip: user.zip});
+  }
 }

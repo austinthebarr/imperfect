@@ -16,13 +16,24 @@ form{
   color:black;
   text-align: center;
 }
-.nav-item:hover {
+.nav-item a:hover {
   background-color: #01BF81;
   color: #fff !important;
 }
 
 .nav{
   background-color: #fff;
+}
+
+.nav-item{
+  text-align: center;
+  padding: 10px 10px;
+  margin-right: -15px;
+}
+
+.header{
+  background-color: #01BF81;
+  color: #fff;
 }
 
 .btn-primary{
