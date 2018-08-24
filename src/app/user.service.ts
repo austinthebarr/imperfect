@@ -13,14 +13,18 @@ export class UserService {
   return this.users;
   }
 
+  getUserById(userId: string){
+    return this.database.object('userInfo/'+ userId);
+  }
+
   updateUserInfo(user){
-    user.update({apt: user.apt,
+    let userEntry = this.getUserById(user.$key);
+    userEntry.update({apt: user.apt,
                  city: user.city,
                  deliveryNotes: user.deliveryNotes,
                  name: user.name,
-                 phone: user.phone,
                  state: user.state,
                  street: user.street,
-                 zip: user.zip});
+                 zip: user.zip })
   }
 }
