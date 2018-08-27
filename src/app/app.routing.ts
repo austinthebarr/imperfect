@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     component: PageOneBodyComponent
   },
   {
-    path: 'user/account',
+    path: '/user/account',
     component: AccountComponent
   }
 
