@@ -26,6 +26,8 @@ export class UserService {
                  name: user.name,
                  state: user.state,
                  street: user.street,
-                 zip: user.zip })
+                 zip: user.zip,
+                 box: user.box 
+                })
   }
 }

@@ -3,6 +3,7 @@ import { User } from '../user.model';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2/database';
+import { Subscription } from '../../../node_modules/rxjs';
 
 @Component({
   selector: 'app-account',
@@ -29,4 +30,8 @@ export class AccountComponent implements OnInit {
   delivery = false;
 
   times = ["thu 8:00am - 12:00pm","thu 1:00pm - 3:00pm"]
+
+  subscription = false;
+
+  boxes = ["Organic Box", "All Veggie Box", "All Fruit Box", "Mixed Fruit & Veggie Box"];
 }

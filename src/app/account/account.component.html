@@ -9,18 +9,18 @@
         </svg-icon>Account Details</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" (click)="delivery = true">
+      <a class="nav-link" (click)="delivery = true; subscription = false" >
         <svg-icon src="./assets/images/clock.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
         </svg-icon>Delivery</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">
+      <a class="nav-link" (click)="subscription = true; delivery = false">
         <svg-icon src="./assets/images/box.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
         </svg-icon>Manage Subscription</a>
     </li>
   </ul>
   <div class="col-md-1"></div>
-  <span *ngIf="delivery === false">
+  <span *ngIf="delivery === false && subscription === false">
     <form class="col-md-6" *ngFor="let user of users | async">
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -63,7 +63,7 @@
   </span>
   <!-- Delivery -->
   <div *ngFor="let user of users | async">
-    <form class="col-md-6" *ngIf="delivery === true">
+    <form class="col-md-6" *ngIf="delivery === true ">
           <h1>Delivery Time</h1>
           <label for="inputDelivery">Choose Time:</label>
           <select [(ngModel)]="user.delivery" id="inputState" class="form-control" name="delivery">
@@ -73,4 +73,16 @@
            <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
     </form>
   </div>
+<!-- Subscription -->
+  <div *ngFor="let user of users | async">
+      <form class="col-md-6" *ngIf="subscription === true">
+            <h1>Box Type</h1>
+            <label for="inputDelivery">Choose Box:</label>
+            <select [(ngModel)]="user.box" id="inputState" class="form-control" name="box">
+                <option selected>{{user.box}}</option>
+                <option *ngFor="let box of boxes">{{this.box}}</option>
+             </select>   
+             <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
+      </form>
+    </div>
 </div>
