@@ -4,12 +4,12 @@
       <svg-icon src="./assets/images/user.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
       </svg-icon>My Account</li>
     <li class="nav-item">
-      <a class="nav-link active" href="user/account">
+      <a class="nav-link active" (click)="delivery = false; subscription = false">
         <svg-icon src="./assets/images/home.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
         </svg-icon>Account Details</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" (click)="delivery = true; subscription = false" >
+      <a class="nav-link" (click)="delivery = true; subscription = false">
         <svg-icon src="./assets/images/clock.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
         </svg-icon>Delivery</a>
     </li>
@@ -64,25 +64,25 @@
   <!-- Delivery -->
   <div *ngFor="let user of users | async">
     <form class="col-md-6" *ngIf="delivery === true ">
-          <h1>Delivery Time</h1>
-          <label for="inputDelivery">Choose Time:</label>
-          <select [(ngModel)]="user.delivery" id="inputState" class="form-control" name="delivery">
-              <option selected>{{user.delivery}}</option>
-              <option *ngFor="let time of times">{{this.time}}</option>
-           </select>   
-           <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
+      <h1>Delivery Time</h1>
+      <label for="inputDelivery">Choose Time:</label>
+      <select [(ngModel)]="user.delivery" id="inputState" class="form-control" name="delivery">
+        <option selected>{{user.delivery}}</option>
+        <option *ngFor="let time of times">{{this.time}}</option>
+      </select>
+      <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
     </form>
   </div>
-<!-- Subscription -->
+  <!-- Subscription -->
   <div *ngFor="let user of users | async">
-      <form class="col-md-6" *ngIf="subscription === true">
-            <h1>Box Type</h1>
-            <label for="inputDelivery">Choose Box:</label>
-            <select [(ngModel)]="user.box" id="inputState" class="form-control" name="box">
-                <option selected>{{user.box}}</option>
-                <option *ngFor="let box of boxes">{{this.box}}</option>
-             </select>   
-             <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
-      </form>
-    </div>
+    <form class="col-md-6" *ngIf="subscription === true">
+      <h1>Box Type</h1>
+      <label for="inputDelivery">Choose Box:</label>
+      <select [(ngModel)]="user.box" id="inputState" class="form-control" name="box">
+        <option selected>{{user.box}}</option>
+        <option *ngFor="let box of boxes">{{this.box}}</option>
+      </select>
+      <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
+    </form>
+  </div>
 </div>

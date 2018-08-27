@@ -3,7 +3,7 @@ import { User } from '../user.model';
 import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { Subscription } from '../../../node_modules/rxjs';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-account',
