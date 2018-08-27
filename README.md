@@ -1,6 +1,8 @@
 # Imperfect Produce (re·im·ag·ine)
 
 A web app, built with Angular.
+Live Version:
+https://imperfect-934e6.firebaseapp.com/
 
 ## Created
 Epicodus Independent Project 08/17/2018 & 08/24/2018
