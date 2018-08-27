@@ -1,27 +1,89 @@
-# Imperfect
+# Imperfect Produce (re·im·ag·ine)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+A web app, built with Angular.
 
-## Development server
+## Created
+Epicodus Independent Project 08/17/2018 & 08/24/2018
+Austin Barr
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installation
+(if you do not have node)
 
-## Code scaffolding
+```
+brew install node
+```
+```
+node -v
+v6.2.0
+```
+```
+npm -v
+3.10.5
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+( Install TypeScript)
+```
+npm install typescript -g
+```
 
-## Build
+(Install Angular)
+```
+npm install -g @angular/cli@1.6.5
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+1. Clone this repository.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ ```
+NPM Install
+ ```
 
-## Running end-to-end tests
+2. Set Up Firebase
+  * Create Account
+  * select option 'Create a New Project'
+  * Create a project named 'imperfect' and  select your region
+  * Select 'add Firebase to your web App'
+  * Copy code from Modal 
+  * Example:
+    ```
+    export const masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+    };
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+  * Create a new file 'src/app/api-keys.ts'
+  * Paste code from Modal in file
 
-## Further help
+3. Run App on local server
+  ```
+  ng serve --open
+  ```
+## Specifications
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. App is will look similar to Imperfect Produce.
+2. App will be able to allow user to log in.
+3. App will allow user to modify their information.
+4. App will allow user to change delivery date of their produce.
+5. App will allow user to change their subscription.
+
+### Technologies Used
+
+* Node.JS
+* ANGULAR
+* HTML
+* CSS
+* TYPESCRIPT
+* BOOTSTRAP
+
+### Support and Contact Details
+If you encounter any bugs or would like to make suggestions regarding this project, please feel free to contact austinbarr@protonmail.com.
+
+
+
+### License
+
+This project is distributed under the MIT License
