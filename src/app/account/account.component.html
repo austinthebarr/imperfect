@@ -1,59 +1,76 @@
-
 <div class="row">
-    <ul class="nav flex-column col-md-3">
-      <li class="header nav-item"><svg-icon src="./assets/images/user.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+  <ul class="nav flex-column col-md-3">
+    <li class="header nav-item">
+      <svg-icon src="./assets/images/user.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
       </svg-icon>My Account</li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#"><svg-icon src="./assets/images/home.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
-          </svg-icon>Account Details</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><svg-icon src="./assets/images/clock.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
-          </svg-icon>Delivery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><svg-icon src="./assets/images/box.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
-          </svg-icon>Manage Subscription</a>
-        </li>
-      </ul>
-      <div class="col-md-1"></div>
-<form class= "col-md-5" *ngFor="let user of users | async">
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="email">Name</label>
-        <input [(ngModel)]="user.name" type="email" class="form-control" id="inputEmail4" name="name" placeholder="{{user.name}}">
+    <li class="nav-item">
+      <a class="nav-link active" href="user/account">
+        <svg-icon src="./assets/images/home.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+        </svg-icon>Account Details</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="delivery = true">
+        <svg-icon src="./assets/images/clock.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+        </svg-icon>Delivery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <svg-icon src="./assets/images/box.svg" [svgStyle]="{'width.px':30,'padding.px':1,'margin.px':3}">
+        </svg-icon>Manage Subscription</a>
+    </li>
+  </ul>
+  <div class="col-md-1"></div>
+  <span *ngIf="delivery === false">
+    <form class="col-md-6" *ngFor="let user of users | async">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="email">Name</label>
+          <input [(ngModel)]="user.name" type="email" class="form-control" id="inputEmail4" name="name" placeholder="{{user.name}}">
+        </div>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress">Address</label>
-      <input [(ngModel)]="user.street" type="text" class="form-control" id="inputAddress" name="street" placeholder="{{user.street}}">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress2">Apt</label>
-      <input [(ngModel)]="user.apt" type="text" class="form-control" id="inputAddress2" name="apt" placeholder="{{user.apt}}">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <input [(ngModel)]="user.city" type="text" class="form-control" id="inputCity" name="city" placeholder="{{user.city}}">
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input [(ngModel)]="user.street" type="text" class="form-control" id="inputAddress" name="street" placeholder="{{user.street}}">
       </div>
-      <div class="form-group col-md-4">
-        <label for="inputState">State</label>
-        <select [(ngModel)]="user.state" id="inputState" class="form-control" name="state">
-          <option selected>{{user.state}}</option>
-          <option *ngFor="let state of states">{{this.state}}</option>
-        </select>
+      <div class="form-group">
+        <label for="inputAddress2">Apt</label>
+        <input [(ngModel)]="user.apt" type="text" class="form-control" id="inputAddress2" name="apt" placeholder="{{user.apt}}">
       </div>
-      <div class="form-group col-md-2">
-        <label for="inputZip">Zip</label>
-        <input [(ngModel)]="user.zip" type="text" class="form-control" id="inputZip" placeholder="{{user.zip}}" name="zip">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input [(ngModel)]="user.city" type="text" class="form-control" id="inputCity" name="city" placeholder="{{user.city}}">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select [(ngModel)]="user.state" id="inputState" class="form-control" name="state">
+            <option selected>{{user.state}}</option>
+            <option *ngFor="let state of states">{{this.state}}</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input [(ngModel)]="user.zip" type="text" class="form-control" id="inputZip" placeholder="{{user.zip}}" name="zip">
+        </div>
       </div>
-    </div>
-    <div class="form-group">
+      <div class="form-group">
         <label for="exampleFormControlTextarea1">Delivery Notes</label>
-        <textarea [(ngModel)]="user.deliveryNotes" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="{{user.deliveryNotes}}" name="deliveryNotes"></textarea>
+        <textarea [(ngModel)]="user.deliveryNotes" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="{{user.deliveryNotes}}"
+          name="deliveryNotes"></textarea>
       </div>
-  
-    <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
-  </form>
+      <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
+    </form>
+  </span>
+  <!-- Delivery -->
+  <div *ngFor="let user of users | async">
+    <form class="col-md-6" *ngIf="delivery === true">
+          <h1>Delivery Time</h1>
+          <label for="inputDelivery">Choose Time:</label>
+          <select [(ngModel)]="user.delivery" id="inputState" class="form-control" name="delivery">
+              <option selected>{{user.delivery}}</option>
+              <option *ngFor="let time of times">{{this.time}}</option>
+           </select>   
+           <button type="submit" class="btn btn-primary" (click)="alter(user)">Update</button>
+    </form>
+  </div>
 </div>

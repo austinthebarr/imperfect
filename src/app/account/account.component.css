@@ -6,11 +6,6 @@
   justify-content: center;
 }
 
-form{
-  background-color: #fff;
-  margin-top: 1em;
-}
-
 .nav-item .nav-link{
   text-decoration: none;
   color:black;
@@ -39,4 +34,12 @@ form{
 .btn-primary{
   background-color: #01BF81;
   border: none;
+  margin-bottom: 1em;
+  padding: 7px 20px;
+}
+
+.col-md-6{
+  max-width: 100% !important;
+  background-color: #fff;
+  margin-top: 1em;
 }

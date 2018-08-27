@@ -22,6 +22,7 @@ export class UserService {
     userEntry.update({apt: user.apt,
                  city: user.city,
                  deliveryNotes: user.deliveryNotes,
+                 delivery: user.delivery,
                  name: user.name,
                  state: user.state,
                  street: user.street,
