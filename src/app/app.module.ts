@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PageOneBodyComponent } from './page-one-body/page-one-body.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
 import { AccountComponent } from './account/account.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -31,8 +29,6 @@ export const firebaseConfig = {
     HeaderComponent,
     PageOneBodyComponent,
     FooterComponent,
-    LoginComponent,
-    SignUpComponent,
     AccountComponent
   ],
   imports: [

@@ -10,10 +10,10 @@
       <div class="button">
         <ul>
           <li *ngIf="isLoggedIn">
-            <a>{{userName}}</a> <a (click)="logout()" routerLink = '/'>Log out</a>
+            <a>{{userName}}</a> <a (click)="logout()" routerLink = ''>Log out</a>
           </li>
-          <li *ngIf="!isLoggedIn"><a (click="login()") routerLink = '/user/account'>Login</a></li>
-          <li><a routerLink= '/sign_up'><button class="btn-danger">Sign Up</button></a> </li>
+          <li *ngIf="!isLoggedIn"><a (click)="login()">Login</a></li>
+          <li><a *ngIf="isLoggedIn" routerLink= 'user/account'><button class="btn-danger">Account</button></a> </li>
         </ul>
       </div>
       <div class="row header">
